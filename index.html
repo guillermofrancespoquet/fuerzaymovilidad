@@ -10,60 +10,70 @@
 								</script>
 							<head><style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--pet:#163a47;--pet2:#1f4d5e;--cam:#c19a6b;--cam2:#d9b88c;--crm:#f7f4ee;--crm2:#fbf7ef;--txt2:#e7dfd2;--brd:#e2d8c5;--rad:16px}
-body{font-family:'Helvetica Neue',Arial,sans-serif;background:var(--crm);color:var(--pet);padding:0}
+body{font-family:'Helvetica Neue',Arial,sans-serif;background:#f7f4ee;color:#163a47}
 .wrap{max-width:700px;margin:0 auto;padding:1rem}
-.hero{background:linear-gradient(135deg,var(--pet),var(--pet2));border-radius:var(--rad);padding:1.5rem 1.5rem 1.2rem;margin-bottom:1.2rem;color:white}
-.hero h1{font-size:20px;font-weight:500;margin-bottom:4px;color:white}
-.hero p{font-size:13px;color:var(--txt2);line-height:1.5}
-.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:1rem}
-.pill{background:rgba(193,154,107,0.25);border:1px solid var(--cam);border-radius:20px;padding:4px 14px;font-size:12px;color:var(--cam2)}
+.hero{background:linear-gradient(135deg,#163a47,#1f4d5e);border-radius:16px;padding:1.5rem 1.5rem 1.4rem;margin-bottom:1.2rem}
+.hero h1{font-size:20px;font-weight:500;margin-bottom:6px;color:white}
+.hero p{font-size:13px;color:#e7dfd2;line-height:1.5;margin-bottom:1rem}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{background:rgba(193,154,107,0.3);border:1.5px solid #c19a6b;border-radius:20px;padding:5px 14px;font-size:12px;color:#d9b88c;font-weight:500}
 .tab-row{display:flex;gap:8px;margin-bottom:1rem;overflow-x:auto;padding-bottom:4px}
-.tab{flex-shrink:0;padding:8px 18px;border-radius:20px;border:1.5px solid var(--brd);background:white;color:var(--pet2);font-size:13px;font-weight:500;cursor:pointer;transition:all .2s}
-.tab.active{background:var(--pet);color:white;border-color:var(--pet)}
-.section-title{font-size:14px;font-weight:500;color:var(--cam);letter-spacing:.04em;text-transform:uppercase;margin:1.2rem 0 .7rem}
-.phase-card{background:white;border-radius:var(--rad);border:1px solid var(--brd);padding:1rem 1.1rem;margin-bottom:.8rem}
-.phase-header{display:flex;align-items:center;gap:10px;margin-bottom:.7rem}
+.tab{flex-shrink:0;padding:9px 18px;border-radius:20px;border:1.5px solid #e2d8c5;background:white;color:#1f4d5e;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s}
+.tab.active{background:#163a47;color:white;border-color:#163a47}
+.section-title{font-size:13px;font-weight:500;color:#c19a6b;letter-spacing:.06em;text-transform:uppercase;margin:1.2rem 0 .7rem}
+.phase-card{background:white;border-radius:16px;border:1px solid #e2d8c5;padding:1rem 1.1rem;margin-bottom:.8rem}
+.phase-header{display:flex;align-items:center;gap:10px;margin-bottom:.8rem}
 .phase-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.ph1{background:#3b82f6}.ph2{background:var(--cam)}.ph3{background:#10b981}
-.phase-label{font-size:13px;font-weight:500;color:var(--pet2)}
+.ph1{background:#3b82f6}.ph2{background:#c19a6b}.ph3{background:#10b981}
+.phase-label{font-size:13px;font-weight:500;color:#1f4d5e}
 .phase-time{font-size:12px;color:#888;margin-left:auto}
 .ex-list{display:flex;flex-direction:column;gap:.6rem}
-.ex-item{border:1px solid var(--brd);border-radius:12px;overflow:hidden;cursor:pointer}
-.ex-header{display:flex;align-items:center;gap:10px;padding:.65rem .9rem;background:var(--crm2)}
-.ex-num{width:24px;height:24px;border-radius:50%;background:var(--pet);color:white;font-size:11px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.ex-name{font-size:14px;font-weight:500;flex:1;color:var(--pet)}
-.ex-tool{font-size:11px;color:var(--cam);background:rgba(193,154,107,.15);border-radius:8px;padding:2px 8px;flex-shrink:0}
-.ex-arrow{font-size:13px;color:#aaa;transition:transform .2s}
-.ex-body{display:none;padding:.8rem .9rem .9rem;border-top:1px solid var(--brd);background:white}
+.ex-item{border:1px solid #e2d8c5;border-radius:12px;overflow:hidden}
+.ex-header{display:flex;align-items:center;gap:10px;padding:.65rem .9rem;background:#fbf7ef;cursor:pointer;user-select:none}
+.ex-num{width:24px;height:24px;border-radius:50%;background:#163a47;color:white;font-size:11px;font-weight:500;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ex-name{font-size:13px;font-weight:500;flex:1;color:#163a47}
+.ex-tool{font-size:11px;color:#c19a6b;background:rgba(193,154,107,.18);border-radius:8px;padding:3px 8px;flex-shrink:0;border:1px solid rgba(193,154,107,.3)}
+.ex-arrow{font-size:12px;color:#aaa;transition:transform .2s;flex-shrink:0}
+.ex-body{display:none;border-top:1px solid #e2d8c5;background:white}
 .ex-body.open{display:block}
+.yt-btn{display:flex;align-items:center;gap:10px;background:#cc0000;border:none;border-radius:0;padding:.7rem 1rem;cursor:pointer;width:100%;text-align:left;text-decoration:none}
+.yt-btn:hover{background:#aa0000}
+.yt-inner{display:flex;align-items:center;gap:10px;width:100%}
+.yt-logo{display:flex;align-items:center;justify-content:center;background:white;border-radius:6px;padding:4px 7px;flex-shrink:0}
+.yt-logo svg{display:block}
+.yt-text{display:flex;flex-direction:column;overflow:hidden;flex:1}
+.yt-tag{font-size:10px;color:rgba(255,255,255,0.75);line-height:1;margin-bottom:2px;text-transform:uppercase;letter-spacing:.04em}
+.yt-title{font-size:12.5px;font-weight:500;color:white;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.yt-type{font-size:10px;color:rgba(255,255,255,0.6);margin-top:1px}
+.yt-arrow{color:rgba(255,255,255,0.7);font-size:14px;flex-shrink:0}
+.ex-content{padding:.8rem .9rem .9rem}
 .ex-desc{font-size:13px;color:#555;line-height:1.55;margin-bottom:.7rem}
 .ex-meta{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-bottom:.7rem}
-.meta-box{background:var(--crm2);border-radius:10px;padding:.5rem .7rem;border:1px solid var(--brd)}
-.meta-label{font-size:11px;color:var(--cam);font-weight:500;margin-bottom:2px}
-.meta-val{font-size:13px;color:var(--pet);font-weight:500}
+.meta-box{background:#fbf7ef;border-radius:10px;padding:.5rem .7rem;border:1px solid #e2d8c5}
+.meta-label{font-size:11px;color:#c19a6b;font-weight:500;margin-bottom:2px}
+.meta-val{font-size:13px;color:#163a47;font-weight:500}
 .alert-box{background:#fff7ed;border-left:3px solid #f59e0b;border-radius:0 10px 10px 0;padding:.55rem .8rem;margin-bottom:.6rem}
 .alert-title{font-size:11px;font-weight:500;color:#92400e;margin-bottom:2px}
 .alert-text{font-size:12px;color:#78350f;line-height:1.45}
 .reg-box{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
-.reg-item{border-radius:10px;padding:.55rem .7rem;border:1px solid var(--brd)}
+.reg-item{border-radius:10px;padding:.55rem .7rem;border:1px solid #e2d8c5}
 .reg-label{font-size:11px;font-weight:500;margin-bottom:2px}
 .reg-text{font-size:12px;color:#444;line-height:1.4}
 .reg-item.reg{background:#f0fdf4;border-color:#bbf7d0}.reg-item.reg .reg-label{color:#166534}
 .reg-item.prog{background:#eff6ff;border-color:#bfdbfe}.reg-item.prog .reg-label{color:#1e40af}
-.prog-card{background:white;border-radius:var(--rad);border:1px solid var(--brd);padding:1rem 1.1rem;margin-bottom:.8rem}
-.prog-week{font-size:13px;font-weight:500;color:var(--pet);margin-bottom:4px}
+.prog-card{background:white;border-radius:16px;border:1px solid #e2d8c5;padding:1rem 1.1rem;margin-bottom:.8rem}
+.prog-week{font-size:13px;font-weight:500;color:#163a47;margin-bottom:4px}
 .prog-text{font-size:13px;color:#555;line-height:1.5}
-.prog-badge{display:inline-block;font-size:11px;background:var(--pet);color:white;border-radius:8px;padding:2px 8px;margin-bottom:.5rem}
-.footer{background:linear-gradient(135deg,var(--pet),var(--pet2));border-radius:var(--rad);padding:1rem 1.2rem;margin-top:1rem;text-align:center}
-.footer p{font-size:12px;color:var(--txt2);line-height:1.5}
+.prog-badge{display:inline-block;font-size:11px;background:#163a47;color:white;border-radius:8px;padding:3px 9px;margin-bottom:.5rem}
+.footer{background:linear-gradient(135deg,#163a47,#1f4d5e);border-radius:16px;padding:1rem 1.2rem;margin-top:1rem;text-align:center}
+.footer p{font-size:12px;color:#e7dfd2;line-height:1.5}
 .day-hidden{display:none}
 </style>
 
 </head><body><div class="wrap">
 <div class="hero">
   <h1>Programa Fuerza &amp; Movilidad — 60 años</h1>
-  <p>3 días/semana · En casa sin equipo · Protección articular prioritaria</p>
+  <p>3 días/semana · En casa sin equipo · Vídeo corto explicativo en cada ejercicio</p>
   <div class="pills">
     <span class="pill">Sin impacto</span>
     <span class="pill">Columna neutra</span>
@@ -80,30 +90,77 @@ body{font-family:'Helvetica Neue',Arial,sans-serif;background:var(--crm);color:v
   <button class="tab" onclick="showDay(3)">Progresión Semanal</button>
 </div>
 
+<!-- helpers -->
+<script>
+function yt(url,title,tag,isShort){
+  var t=isShort?'Short · Vídeo corto':'Vídeo explicativo';
+  return '<a class="yt-btn" onclick="openLink(\''+url+'\')">'+
+    '<div class="yt-inner">'+
+      '<div class="yt-logo"><svg width="22" height="16" viewBox="0 0 22 16"><rect width="22" height="16" rx="3" fill="#FF0000"/><polygon points="9,4 17,8 9,12" fill="white"/></svg></div>'+
+      '<div class="yt-text">'+
+        '<span class="yt-tag">'+tag+'</span>'+
+        '<span class="yt-title">'+title+'</span>'+
+        '<span class="yt-type">'+t+'</span>'+
+      '</div>'+
+      '<span class="yt-arrow">›</span>'+
+    '</div>'+
+  '</a>';
+}
+function showDay(n){
+  for(var i=0;i<4;i++){var el=document.getElementById('day'+i);if(el)el.className=i===n?'':'day-hidden';}
+  document.querySelectorAll('.tab').forEach(function(t,i){t.className=i===n?'tab active':'tab';});
+}
+function toggle(item){
+  var body=item.querySelector('.ex-body');
+  var arrow=item.querySelector('.ex-arrow');
+  var open=body.classList.toggle('open');
+  arrow.style.transform=open?'rotate(180deg)':'';
+}
+</script>
+
 <!-- DÍA 1 -->
 <div id="day0">
-
 <div class="section-title">Día 1 · Tren Inferior + Equilibrio</div>
 
 <div class="phase-card">
   <div class="phase-header"><div class="phase-dot ph1"></div><span class="phase-label">Fase 1 · Calentamiento dinámico</span><span class="phase-time">10 min</span></div>
   <div class="ex-list">
 
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">1</div><span class="ex-name">Círculos de tobillo con apoyo</span><span class="ex-tool">Silla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Sentado en la silla, levanta un pie del suelo y traza círculos lentos con el tobillo, 10 en cada dirección. Alterna pies. Activa la propiocepción del pie sin cargar la rodilla.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 10 cada pie</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">Sin descanso</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Mantén la espalda apoyada en el respaldo o erguida. No te inclines hacia adelante.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">1</div><span class="ex-name">Círculos de tobillo con apoyo</span><span class="ex-tool">Silla</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body">
+        <div id="yt1"></div>
+        <div class="ex-content">
+          <p class="ex-desc">Sentado en la silla, levanta un pie del suelo y traza círculos lentos con el tobillo, 10 en cada dirección. Alterna pies. Activa la propiocepción del pie sin cargar la rodilla.</p>
+          <div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 10 cada pie</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">Sin descanso</div></div></div>
+          <div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Mantén la espalda apoyada o erguida. No te inclines hacia adelante.</div></div>
+        </div>
+      </div>
     </div>
 
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">2</div><span class="ex-name">Apertura de cadera sentado (Figure-4)</span><span class="ex-tool">Silla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Sentado, cruza el tobillo derecho sobre la rodilla izquierda formando un "4". Mantén la espalda erguida y ejerce presión suave hacia abajo sobre la rodilla derecha. Aguanta 20 s cada lado.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Tiempo</div><div class="meta-val">2 × 20 s cada lado</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">Sin descanso</div></div></div><div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">La presión es suave y hacia abajo. Nunca empujes lateralmente ni fuerces la articulación. Si hay dolor, para.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">2</div><span class="ex-name">Apertura de cadera sentado (Figure-4)</span><span class="ex-tool">Silla</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body">
+        <div id="yt2"></div>
+        <div class="ex-content">
+          <p class="ex-desc">Sentado, cruza el tobillo derecho sobre la rodilla izquierda formando un "4". Mantén la espalda erguida y ejerce presión suave hacia abajo sobre la rodilla derecha. Aguanta 20 s cada lado.</p>
+          <div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Tiempo</div><div class="meta-val">2 × 20 s cada lado</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">Sin descanso</div></div></div>
+          <div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">La presión es suave y hacia abajo. Nunca empujes lateralmente ni fuerces la articulación.</div></div>
+        </div>
+      </div>
     </div>
 
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">3</div><span class="ex-name">Rotación de columna torácica sentado</span><span class="ex-tool">Silla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Sentado al borde de la silla, brazos cruzados en el pecho. Gira lentamente el tronco hacia la derecha, aguanta 2 s, vuelve al centro y repite al lado izquierdo. La rotación viene del pecho, no de la cadera.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 8 cada lado</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">Sin descanso</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Evita girar desde la zona lumbar. Si notas presión en la parte baja, reduce el rango de movimiento.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">3</div><span class="ex-name">Rotación torácica sentado</span><span class="ex-tool">Silla</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body">
+        <div id="yt3"></div>
+        <div class="ex-content">
+          <p class="ex-desc">Sentado al borde de la silla, brazos cruzados en el pecho. Gira lentamente el tronco hacia la derecha, aguanta 2 s, vuelve al centro. La rotación viene del pecho, no de la cadera.</p>
+          <div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 8 cada lado</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">Sin descanso</div></div></div>
+          <div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Evita girar desde la zona lumbar. Si notas presión en la parte baja, reduce el rango.</div></div>
+        </div>
+      </div>
     </div>
-
   </div>
 </div>
 
@@ -111,69 +168,116 @@ body{font-family:'Helvetica Neue',Arial,sans-serif;background:var(--crm);color:v
   <div class="phase-header"><div class="phase-dot ph2"></div><span class="phase-label">Fase 2 · Bloque de Fuerza Principal</span><span class="phase-time">25-30 min</span></div>
   <div class="ex-list">
 
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">1</div><span class="ex-name">Sentarse y levantarse asistido (Chair Squat)</span><span class="ex-tool">Silla pegada a pared</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">De pie frente a la silla (mirando de espaldas a ella), pies a la anchura de caderas. Baja lentamente con 3 s de descenso hasta rozar el asiento, luego empuja el suelo para levantarte. Los brazos pueden extenderse al frente para equilibrio.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">3 × 8-10</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">90 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">Las rodillas deben seguir la línea de los pies, nunca colapsar hacia adentro. Evita que la rodilla sobrepase mucho la punta del pie. La silla sirve de tope para no bajar más de 90°.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Empuja con las manos sobre los muslos o usa un cojín alto en la silla para reducir el rango.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Sostén una mochila con 1-2 kg al pecho o ralentiza el descenso a 4-5 s.</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">1</div><span class="ex-name">Sentarse y levantarse asistido (Chair Squat)</span><span class="ex-tool">Silla pegada a pared</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body">
+        <div id="yt4"></div>
+        <div class="ex-content">
+          <p class="ex-desc">De pie frente a la silla (de espaldas a ella), pies a la anchura de caderas. Baja lentamente con 3 s de descenso hasta rozar el asiento, luego empuja el suelo para levantarte.</p>
+          <div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">3 × 8-10</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">90 s entre series</div></div></div>
+          <div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">Las rodillas deben seguir la línea de los pies, nunca colapsar hacia adentro. La silla es el tope de profundidad.</div></div>
+          <div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Empuja con las manos sobre los muslos o usa un cojín alto.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Mochila con 1-2 kg al pecho o descenso en 5 s.</div></div></div>
+        </div>
+      </div>
     </div>
 
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">2</div><span class="ex-name">Puente de glúteo con pies en suelo</span><span class="ex-tool">Esterilla o moqueta</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Tumbado boca arriba, rodillas dobladas a 45-60° y pies apoyados en el suelo. Aprieta el abdomen y los glúteos, luego eleva la cadera formando una línea recta hombro-cadera-rodilla. Aguanta 2 s arriba y baja con control en 3 s.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">3 × 10-12</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">90 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">No arquees la zona lumbar al subir. La pelvis sube como un bloque único. Si sientes pellizco lumbar, reduce el rango de elevación.</div></div><div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">Los pies deben estar a la distancia justa: si quedan muy lejos, aumenta el estrés lumbar; si muy cerca, aumenta el estrés en la rodilla.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Eleva la cadera solo 10-15 cm del suelo hasta ganar fuerza en glúteos.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Extiende una pierna mientras mantienes la cadera arriba (puente unilateral asistido).</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">2</div><span class="ex-name">Puente de glúteo con pies en suelo</span><span class="ex-tool">Esterilla o moqueta</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body">
+        <div id="yt5"></div>
+        <div class="ex-content">
+          <p class="ex-desc">Tumbado boca arriba, rodillas dobladas a 45-60°. Aprieta abdomen y glúteos, eleva la cadera formando una línea recta hombro-cadera-rodilla. Aguanta 2 s arriba y baja con control en 3 s.</p>
+          <div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">3 × 10-12</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">90 s entre series</div></div></div>
+          <div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">No arquees la zona lumbar al subir. La pelvis sube como un bloque único.</div></div>
+          <div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Eleva la cadera solo 10-15 cm del suelo hasta ganar fuerza.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Puente unilateral: extiende una pierna mientras mantienes la cadera arriba.</div></div></div>
+        </div>
+      </div>
     </div>
 
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">3</div><span class="ex-name">Abducción de cadera de pie con apoyo</span><span class="ex-tool">Pared o silla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">De pie apoyando una mano en la pared para equilibrio. Levanta la pierna exterior hacia el lado hasta unos 30-40°, manteniendo el torso erguido y sin inclinar la cadera. Baja con control. Trabaja directamente el glúteo medio, protector clave de la rodilla.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 12 cada pierna</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">60 s entre lados</div></div></div><div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">Mantén la pierna de apoyo con rodilla ligeramente flexionada, nunca bloqueada. Evita inclinar el tronco hacia el lado contrario.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Hazlo sentado con resistencia manual (presiona el muslo con la mano opuesta).</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Coloca una toalla enrollada en el tobillo para añadir ligera resistencia.</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">3</div><span class="ex-name">Abducción de cadera de pie con apoyo</span><span class="ex-tool">Pared o silla</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body">
+        <div id="yt6"></div>
+        <div class="ex-content">
+          <p class="ex-desc">De pie apoyando una mano en la pared. Levanta la pierna exterior hacia el lado hasta unos 30-40°, manteniendo el torso erguido sin inclinar la cadera. Trabaja el glúteo medio, protector clave de la rodilla.</p>
+          <div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 12 cada pierna</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">60 s entre lados</div></div></div>
+          <div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">Mantén la pierna de apoyo con rodilla ligeramente flexionada, nunca bloqueada.</div></div>
+          <div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Hazlo sentado con resistencia manual sobre el muslo.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Toalla enrollada en el tobillo para añadir resistencia.</div></div></div>
+        </div>
+      </div>
     </div>
 
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">4</div><span class="ex-name">Elevación de talones de pie (Calf raises)</span><span class="ex-tool">Pared o encimera</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">De pie con los pies juntos, apoya las puntas de los dedos en la pared para equilibrio. Sube lentamente los talones del suelo (2 s subida, 2 s bajada), contrayendo bien los gemelos. Esencial para la estabilidad de tobillo y la circulación venosa.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">3 × 15</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">60 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">No bloquees la rodilla al subir. Mantén una leve flexión para proteger la articulación.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Hazlo sentado apoyando las palmas sobre los muslos y elevando los talones.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Hazlo con un solo pie a la vez, apoyando el otro por detrás del tobillo.</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">4</div><span class="ex-name">Elevación de talones (Calf raises)</span><span class="ex-tool">Pared o encimera</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body">
+        <div id="yt7"></div>
+        <div class="ex-content">
+          <p class="ex-desc">De pie con los pies juntos, apoya las yemas en la pared. Sube lentamente los talones (2 s subida, 2 s bajada). Esencial para estabilidad de tobillo y circulación venosa.</p>
+          <div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">3 × 15</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">60 s entre series</div></div></div>
+          <div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">No bloquees la rodilla al subir. Mantén una leve flexión para proteger la articulación.</div></div>
+          <div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Hazlo sentado apoyando las palmas sobre los muslos.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Un solo pie a la vez.</div></div></div>
+        </div>
+      </div>
     </div>
 
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">5</div><span class="ex-name">Equilibrio monopodal con apoyo progresivo</span><span class="ex-tool">Pared o encimera</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Apoyado en la pared con 1 o 2 dedos, sostente sobre un pie durante 20-30 s. La mirada fija en un punto frente a ti. Trabaja el sistema propioceptivo y la estabilidad de tobillo, factores claves para prevenir caídas.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Tiempo</div><div class="meta-val">2 × 20-30 s cada pie</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">30 s entre lados</div></div></div><div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">Rodilla de la pierna de apoyo ligeramente doblada, nunca bloqueada. Si la rodilla vibra o tiembla, apoya la mano entera — es señal de que el músculo aún se está adaptando.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Apoya la palma completa en la pared o usa la silla. Reduce el tiempo a 10 s.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Cierra los ojos durante 5-10 s para aumentar el desafío propioceptivo.</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">5</div><span class="ex-name">Equilibrio monopodal con apoyo progresivo</span><span class="ex-tool">Pared o encimera</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body">
+        <div id="yt8"></div>
+        <div class="ex-content">
+          <p class="ex-desc">Apoyado en la pared con 1 o 2 dedos, sostente sobre un pie durante 20-30 s. Mirada fija en un punto frente a ti. Trabaja el sistema propioceptivo y la estabilidad de tobillo.</p>
+          <div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Tiempo</div><div class="meta-val">2 × 20-30 s cada pie</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">30 s entre lados</div></div></div>
+          <div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">Rodilla de apoyo ligeramente doblada, nunca bloqueada. Si tiembla, apoya la mano entera.</div></div>
+          <div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Apoya la palma completa o usa la silla. Reduce el tiempo a 10 s.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Cierra los ojos 5-10 s para aumentar el desafío propioceptivo.</div></div></div>
+        </div>
+      </div>
     </div>
-
   </div>
 </div>
 
 <div class="phase-card">
   <div class="phase-header"><div class="phase-dot ph3"></div><span class="phase-label">Fase 3 · Vuelta a la calma</span><span class="phase-time">10 min</span></div>
   <div class="ex-list">
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">1</div><span class="ex-name">Estiramiento de isquiotibiales sentado</span><span class="ex-tool">Silla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Sentado al borde de la silla, extiende una pierna con el talón en el suelo y la punta arriba. Inclínate ligeramente hacia adelante desde la CADERA (no curvando la espalda) hasta notar un tirón suave en la parte posterior del muslo. Aguanta 30 s.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">30 s cada pierna, x2</div></div><div class="meta-box"><div class="meta-label">Intensidad</div><div class="meta-val">Tirón suave, sin dolor</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">La inclinación parte de la cadera con la espalda recta, como una bisagra. Evita redondear la espalda al estirarte.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">1</div><span class="ex-name">Estiramiento de isquiotibiales sentado</span><span class="ex-tool">Silla</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body">
+        <div id="yt9"></div>
+        <div class="ex-content">
+          <p class="ex-desc">Sentado al borde de la silla, extiende una pierna con el talón en el suelo. Inclínate hacia adelante desde la CADERA (espalda recta) hasta notar un tirón suave en el isquiotibial. Aguanta 30 s.</p>
+          <div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">30 s cada pierna, x2</div></div><div class="meta-box"><div class="meta-label">Intensidad</div><div class="meta-val">Tirón suave, sin dolor</div></div></div>
+          <div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">La inclinación parte de la cadera con espalda recta. Nunca redondees la espalda para alcanzar más.</div></div>
+        </div>
+      </div>
     </div>
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">2</div><span class="ex-name">Postura del niño modificada</span><span class="ex-tool">Esterilla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">De rodillas en la esterilla, siéntate sobre los talones y desliza los brazos hacia adelante en el suelo hasta apoyar la frente. Si hay molestia en las rodillas, coloca una manta doblada detrás de ellas. Descomprime la columna lumbar de forma pasiva.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">45-60 s</div></div><div class="meta-box"><div class="meta-label">Respiración</div><div class="meta-val">Lenta y abdominal</div></div></div><div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">Si hay dolor al doblar la rodilla en esta posición, sustituye por tumbarte boca arriba y abraza las rodillas al pecho.</div></div></div>
-    </div>
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">3</div><span class="ex-name">Respiración diafragmática en suelo</span><span class="ex-tool">Esterilla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Tumbado boca arriba, rodillas dobladas, pies en el suelo. Una mano en el pecho, otra en el abdomen. Inhala por la nariz 4 s expandiendo el abdomen (la mano del pecho no debe moverse). Exhala por la boca 6 s vaciando completamente. Activa el sistema nervioso parasimpático para la recuperación.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">5-8 respiraciones</div></div><div class="meta-box"><div class="meta-label">Ritmo</div><div class="meta-val">4 s inhala, 6 s exhala</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Si el suelo presiona la zona lumbar, coloca una toalla enrollada bajo las rodillas para neutral</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">2</div><span class="ex-name">Postura del niño + Respiración diafragmática</span><span class="ex-tool">Esterilla</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body">
+        <div id="yt10"></div>
+        <div class="ex-content">
+          <p class="ex-desc">De rodillas, siéntate sobre los talones y desliza los brazos al frente. Finaliza con 5-8 respiraciones diafragmáticas (4 s inhala abdominal, 6 s exhala completa).</p>
+          <div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">45-60 s + respiración</div></div><div class="meta-box"><div class="meta-label">Ritmo</div><div class="meta-val">4 s inhala · 6 s exhala</div></div></div>
+          <div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">Si hay dolor al doblar la rodilla, sustituye por tumbarte boca arriba y abrazar las rodillas al pecho.</div></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
 </div>
 
 <!-- DÍA 2 -->
 <div id="day1" class="day-hidden">
-
 <div class="section-title">Día 2 · Tren Superior + Postura</div>
 
 <div class="phase-card">
   <div class="phase-header"><div class="phase-dot ph1"></div><span class="phase-label">Fase 1 · Calentamiento dinámico</span><span class="phase-time">10 min</span></div>
   <div class="ex-list">
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">1</div><span class="ex-name">Círculos de hombro hacia atrás</span><span class="ex-tool">Sin material</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">De pie, eleva los hombros hacia las orejas, llévalos hacia atrás, bájalos y repite el círculo. El movimiento debe ser lento y deliberado. Desbloquea la articulación glenohumeral y activa los romboides.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 10 cada dirección</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">Sin descanso</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">No arquees la zona lumbar al llevar los hombros atrás. Mantén el abdomen sutilmente activo.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">1</div><span class="ex-name">Círculos de hombro hacia atrás</span><span class="ex-tool">Sin material</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt11"></div><div class="ex-content"><p class="ex-desc">De pie, eleva los hombros hacia las orejas, llévalos hacia atrás, bájalos y repite el círculo. Desbloquea la articulación glenohumeral y activa los romboides.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 10 cada dirección</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">Sin descanso</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">No arquees la zona lumbar al llevar los hombros atrás. Abdomen sutilmente activo.</div></div></div></div>
     </div>
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">2</div><span class="ex-name">Apertura de pecho con toalla</span><span class="ex-tool">Toalla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Sujeta la toalla extendida con ambas manos a la anchura de hombros. Con los brazos estirados, llévalos por encima de la cabeza y hacia atrás tanto como la movilidad permita sin dolor. Vuelve lentamente al frente. Trabaja la movilidad de la columna torácica.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 8</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">Sin descanso</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Si notas tensión en el hombro, separa más las manos en la toalla. Nunca fuerces el rango.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">2</div><span class="ex-name">Apertura de pecho con toalla</span><span class="ex-tool">Toalla</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt12"></div><div class="ex-content"><p class="ex-desc">Sujeta la toalla extendida a la anchura de hombros. Con los brazos estirados, llévalos por encima de la cabeza y hacia atrás tanto como la movilidad permita. Vuelve lentamente al frente.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 8</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">Sin descanso</div></div></div><div class="alert-box"><div class="alert-title">Atención al hombro</div><div class="alert-text">Si notas tensión en el hombro, separa más las manos en la toalla. Nunca fuerces el rango.</div></div></div></div>
     </div>
   </div>
 </div>
@@ -181,61 +285,54 @@ body{font-family:'Helvetica Neue',Arial,sans-serif;background:var(--crm);color:v
 <div class="phase-card">
   <div class="phase-header"><div class="phase-dot ph2"></div><span class="phase-label">Fase 2 · Bloque de Fuerza Principal</span><span class="phase-time">25-30 min</span></div>
   <div class="ex-list">
-
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">1</div><span class="ex-name">Flexión de brazos inclinada en pared</span><span class="ex-tool">Pared lisa</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">De pie frente a la pared, apoya las palmas a la altura del pecho con los brazos ligeramente doblados. Da un paso atrás para crear ángulo. Dobla los codos bajando el pecho hacia la pared en 3 s, luego empuja para volver. Los pies juntos o separados a la anchura de caderas.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">3 × 8-12</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">90 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">El cuerpo baja como una plancha (tobillo-cadera-hombro en línea). Evita hundir las caderas o elevar las nalgas. El core está activo durante todo el movimiento.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Acércate más a la pared para reducir el peso corporal sobre los brazos.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Apoya las manos en el alféizar de una mesa o encimera baja para más ángulo.</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">1</div><span class="ex-name">Flexión de brazos inclinada en pared</span><span class="ex-tool">Pared lisa</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt13"></div><div class="ex-content"><p class="ex-desc">De pie frente a la pared, apoya las palmas a la altura del pecho. Da un paso atrás para crear ángulo. Dobla los codos bajando el pecho en 3 s, empuja para volver. Cuerpo recto como una plancha.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">3 × 8-12</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">90 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Tobillo-cadera-hombro en línea recta. Evita hundir las caderas. Core activo.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Acércate más a la pared para reducir el peso sobre los brazos.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Apoya las manos en el alféizar de una mesa baja para más ángulo.</div></div></div></div></div>
     </div>
-
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">2</div><span class="ex-name">Remo con toalla en pomo de puerta</span><span class="ex-tool">Toalla + pomo de puerta</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Enrolla la toalla en el pomo cerrado de una puerta. Sujeta ambos extremos, da 1-2 pasos atrás con los brazos estirados y el cuerpo inclinado hacia atrás (cuerpo recto en ángulo). Dobla los codos tirando hacia las costillas, apretando los omóplatos. Fortalece la espalda alta y descarga la zona lumbar.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">3 × 10-12</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">90 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">El movimiento viene de tirar con los codos y apretar los omóplatos, no de curvar la espalda hacia atrás. Mantén el torso rígido como una tabla durante todo el tirón.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Párate más cerca de la puerta para reducir el ángulo de inclinación.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Aléjate más de la puerta para aumentar el ángulo y el peso corporal a tirar.</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">2</div><span class="ex-name">Remo con toalla en pomo de puerta</span><span class="ex-tool">Toalla + pomo de puerta</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt14"></div><div class="ex-content"><p class="ex-desc">Enrolla la toalla en el pomo cerrado. Sujeta los extremos, inclínate hacia atrás con el cuerpo recto. Dobla los codos tirando hacia las costillas, apretando los omóplatos.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">3 × 10-12</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">90 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">El movimiento viene de tirar con los codos y apretar omóplatos, no de curvar la espalda. Torso rígido.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Párate más cerca de la puerta para reducir el ángulo.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Aléjate más para aumentar el peso corporal a tirar.</div></div></div></div></div>
     </div>
-
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">3</div><span class="ex-name">Press de hombros con botellas de agua</span><span class="ex-tool">2 botellas de 1-1,5 L</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Sentado en la silla con la espalda apoyada, sujeta una botella en cada mano a la altura de los hombros con los codos a 90°. Empuja hacia arriba extendiendo los brazos (sin bloquear los codos) y baja con control en 3 s. La espalda permanece apoyada todo el tiempo.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 10</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">90 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Al empujar hacia arriba, no arquees la zona lumbar. Si la espalda se separa del respaldo, reduce el peso o la amplitud del movimiento.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Usa botellas vacías o de 500 ml. Solo lleva los brazos hasta la altura de los ojos.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Usa botellas de 2 L o una mochila sostenida con ambas manos.</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">3</div><span class="ex-name">Press de hombros con botellas de agua</span><span class="ex-tool">2 botellas de 1-1,5 L</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt15"></div><div class="ex-content"><p class="ex-desc">Sentado en la silla con la espalda apoyada, sujeta una botella en cada mano a la altura de los hombros. Empuja hacia arriba extendiendo los brazos y baja con control en 3 s.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 10</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">90 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Al empujar hacia arriba, no arquees la zona lumbar. Si la espalda se separa del respaldo, reduce la carga.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Usa botellas de 500 ml o vacías. Solo lleva los brazos hasta la altura de los ojos.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Botellas de 2 L o una mochila sostenida con ambas manos.</div></div></div></div></div>
     </div>
-
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">4</div><span class="ex-name">Retracción escapular con toalla (Face Pull simulado)</span><span class="ex-tool">Toalla + pomo de puerta</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Como el remo, pero tira de la toalla hacia la cara con los codos hacia fuera y arriba (a la altura de los ojos). Al tirar, rota ligeramente las manos hacia atrás. Este movimiento es clave para la salud del manguito rotador y la corrección postural de hombros hacia adelante.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 12</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">60 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención al hombro</div><div class="alert-text">Nunca hagas este movimiento con el cuello tenso. Si hay chasquido doloroso en el hombro, reduce el rango y consulta a un fisioterapeuta antes de continuar.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Hazlo sentado, más cerca de la puerta. El rango de movimiento puede ser menor.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Añade una pausa de 2 s en el punto de máxima retracción escapular.</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">4</div><span class="ex-name">Retracción escapular con toalla (Face Pull)</span><span class="ex-tool">Toalla + pomo de puerta</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt16"></div><div class="ex-content"><p class="ex-desc">Como el remo, pero tira de la toalla hacia la cara con los codos hacia fuera y arriba. Al tirar, rota ligeramente las manos hacia atrás. Clave para salud del manguito rotador y corrección postural.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 12</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">60 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención al hombro</div><div class="alert-text">Nunca hagas este movimiento con el cuello tenso. Chasquido doloroso → reduce el rango y consulta fisio.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Hazlo sentado, más cerca de la puerta.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Pausa de 2 s en el punto de máxima retracción escapular.</div></div></div></div></div>
     </div>
-
   </div>
 </div>
 
 <div class="phase-card">
   <div class="phase-header"><div class="phase-dot ph3"></div><span class="phase-label">Fase 3 · Vuelta a la calma</span><span class="phase-time">10 min</span></div>
   <div class="ex-list">
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">1</div><span class="ex-name">Estiramiento de pectoral en marco de puerta</span><span class="ex-tool">Marco de puerta</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">De pie en el marco de la puerta, apoya el antebrazo en el borde a la altura del hombro. Gira el cuerpo suavemente hacia el lado contrario hasta sentir un tirón en el pecho y el hombro frontal. Aguanta 30 s.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">30 s cada lado, x2</div></div><div class="meta-box"><div class="meta-label">Intensidad</div><div class="meta-val">Tirón suave en el pecho</div></div></div><div class="alert-box"><div class="alert-title">Atención al hombro</div><div class="alert-text">Nunca eleves el codo por encima del hombro en este estiramiento. Mantén el brazo a 90° o por debajo.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">1</div><span class="ex-name">Estiramiento de pectoral en marco de puerta</span><span class="ex-tool">Marco de puerta</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt17"></div><div class="ex-content"><p class="ex-desc">Apoya el antebrazo en el borde del marco a la altura del hombro. Gira el cuerpo suavemente hacia el lado contrario hasta sentir un tirón en el pecho y el hombro frontal. Aguanta 30 s.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">30 s cada lado, x2</div></div><div class="meta-box"><div class="meta-label">Intensidad</div><div class="meta-val">Tirón suave en el pecho</div></div></div><div class="alert-box"><div class="alert-title">Atención al hombro</div><div class="alert-text">Nunca eleves el codo por encima del hombro. Brazo a 90° o por debajo.</div></div></div></div>
     </div>
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">2</div><span class="ex-name">Respiración diafragmática</span><span class="ex-tool">Esterilla o silla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Igual que en el Día 1. 5-8 respiraciones lentas con 4 s de inhalación abdominal y 6 s de exhalación completa. Cierra los ojos y relaja conscientemente los hombros.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">3-4 minutos</div></div><div class="meta-box"><div class="meta-label">Postura</div><div class="meta-val">Tumbado o sentado erguido</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Si estás tumbado y sientes la lumbar despegarse del suelo, dobla más las rodillas o usa una toalla bajo ellas.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">2</div><span class="ex-name">Respiración diafragmática</span><span class="ex-tool">Esterilla o silla</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt18"></div><div class="ex-content"><p class="ex-desc">5-8 respiraciones lentas con 4 s de inhalación abdominal y 6 s de exhalación completa. Cierra los ojos y relaja conscientemente los hombros.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">3-4 minutos</div></div><div class="meta-box"><div class="meta-label">Postura</div><div class="meta-val">Tumbado o sentado erguido</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Si la lumbar se despega del suelo, dobla más las rodillas o coloca una toalla debajo.</div></div></div></div>
     </div>
   </div>
 </div>
-
 </div>
 
 <!-- DÍA 3 -->
 <div id="day2" class="day-hidden">
-
 <div class="section-title">Día 3 · Core Protegido + Integración Funcional</div>
 
 <div class="phase-card">
   <div class="phase-header"><div class="phase-dot ph1"></div><span class="phase-label">Fase 1 · Calentamiento dinámico</span><span class="phase-time">10 min</span></div>
   <div class="ex-list">
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">1</div><span class="ex-name">Marcha en el sitio con rodillas altas (suave)</span><span class="ex-tool">Sin material</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">De pie, levanta las rodillas alternando despacio (no más allá de la cadera), coordinando el brazo contrario. Ritmo lento, respiración tranquila. Activa la marcha funcional sin impacto.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">2 × 30 s</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">15 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">El pie que apoya en el suelo no debe estar completamente extendido. Mantén una leve flexión de rodilla en todo momento.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">1</div><span class="ex-name">Marcha en el sitio con rodillas altas</span><span class="ex-tool">Sin material</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt19"></div><div class="ex-content"><p class="ex-desc">De pie, levanta las rodillas alternando despacio, coordinando el brazo contrario. Ritmo lento, respiración tranquila. Activa la marcha funcional sin impacto.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">2 × 30 s</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">15 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la rodilla</div><div class="alert-text">El pie de apoyo nunca completamente extendido. Mantén leve flexión de rodilla en todo momento.</div></div></div></div>
     </div>
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">2</div><span class="ex-name">Cat-Cow (gato-vaca) en suelo</span><span class="ex-tool">Esterilla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">A cuatro patas, manos bajo los hombros y rodillas bajo las caderas. Exhala mientras redondeas la espalda hacia el techo (gato). Inhala mientras la dejas caer hacia el suelo suavemente (vaca). El movimiento es lento y fluido, sincronizado con la respiración.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 8</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">Sin descanso</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">En la posición de "vaca", no exageres la extensión lumbar. El arco debe ser suave, no forzado.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">2</div><span class="ex-name">Cat-Cow (gato-vaca) en suelo</span><span class="ex-tool">Esterilla</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt20"></div><div class="ex-content"><p class="ex-desc">A cuatro patas, manos bajo los hombros y rodillas bajo las caderas. Exhala redondeando la espalda (gato). Inhala dejándola caer suavemente (vaca). Movimiento lento y sincronizado con la respiración.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 8</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">Sin descanso</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">En "vaca", no exageres la extensión lumbar. El arco debe ser suave, no forzado.</div></div></div></div>
     </div>
   </div>
 </div>
@@ -243,111 +340,105 @@ body{font-family:'Helvetica Neue',Arial,sans-serif;background:var(--crm);color:v
 <div class="phase-card">
   <div class="phase-header"><div class="phase-dot ph2"></div><span class="phase-label">Fase 2 · Bloque de Fuerza Principal</span><span class="phase-time">25-30 min</span></div>
   <div class="ex-list">
-
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">1</div><span class="ex-name">Plancha inclinada en mesa (anti-extensión)</span><span class="ex-tool">Mesa estable o encimera</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Apoya los antebrazos en el borde de una mesa resistente. El cuerpo forma una línea diagonal desde talones hasta hombros. Aprieta abdomen, glúteos y no permitas que las caderas suban ni bajen. Este es el ejercicio de core más seguro para la columna lumbar.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Tiempo</div><div class="meta-val">3 × 20-30 s</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">60 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Si notas presión lumbar, eleva más los antebrazos (mesa más alta) o acorta el tiempo. Nunca dejes caer la cadera por debajo de la línea del cuerpo. La posición lumbar debe ser neutra, no arqueada.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Apoya en la pared verticalmente para reducir aún más el ángulo. 10-15 s de duración.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Aguanta hasta 45-60 s o usa la encimera en lugar de la mesa (ángulo más bajo).</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">1</div><span class="ex-name">Plancha inclinada en mesa (anti-extensión)</span><span class="ex-tool">Mesa estable o encimera</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt21"></div><div class="ex-content"><p class="ex-desc">Apoya los antebrazos en el borde de una mesa resistente. El cuerpo forma una línea diagonal desde talones hasta hombros. Aprieta abdomen y glúteos. El ejercicio de core más seguro para la columna lumbar.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Tiempo</div><div class="meta-val">3 × 20-30 s</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">60 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Si notas presión lumbar, eleva más los antebrazos. Posición lumbar neutra, nunca arqueada.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Apoya en la pared verticalmente. Empieza con 10-15 s.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Aguanta hasta 45-60 s o usa la encimera (ángulo más bajo).</div></div></div></div></div>
     </div>
-
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">2</div><span class="ex-name">Dead Bug (insecto muerto) asistido</span><span class="ex-tool">Esterilla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Tumbado boca arriba, rodillas dobladas en 90° elevadas, brazos extendidos al techo. Exhala profundamente aplastando la zona lumbar contra el suelo. Extiende lentamente el brazo derecho hacia atrás y la pierna izquierda hacia adelante. Vuelve al centro e inhala. Alterna lados. Ejercicio de anti-extensión lumbar por excelencia.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 5 cada lado</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">90 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">La zona lumbar debe mantenerse pegada al suelo en todo momento. Si se despega al extender la pierna, reduce el rango: solo baja el talón hasta 15 cm del suelo en lugar de extenderlo por completo.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Solo mueve los brazos manteniendo las rodillas dobladas y quietas. Sin mover piernas.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Extiende la pierna hasta casi tocar el suelo con el talón, mantén 3 s y vuelve.</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">2</div><span class="ex-name">Dead Bug (insecto muerto) asistido</span><span class="ex-tool">Esterilla</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt22"></div><div class="ex-content"><p class="ex-desc">Tumbado boca arriba, rodillas en 90° elevadas, brazos al techo. Exhala aplastando la lumbar contra el suelo. Extiende el brazo derecho hacia atrás y la pierna izquierda hacia adelante. Alterna lados.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 5 cada lado</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">90 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">La zona lumbar debe mantenerse pegada al suelo en todo momento. Si se despega, reduce el rango de la pierna.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Solo mueve los brazos, manteniendo las rodillas quietas.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Extiende la pierna hasta casi tocar el suelo con el talón, mantén 3 s.</div></div></div></div></div>
     </div>
-
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">3</div><span class="ex-name">Pallof Press simulado con toalla</span><span class="ex-tool">Toalla + pomo de puerta</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Sujeta la toalla con ambas manos a la altura del pecho, de pie de lado a la puerta. La toalla está en tensión. Extiende los brazos al frente sin dejar que el torso rote hacia la puerta. Mantén 3 s y regresa. Entrena la resistencia a la rotación (anti-rotación), fundamental para la estabilidad lumbar.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 8 cada lado</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">60 s entre lados</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Si notas que el torso gira hacia la puerta, estás demasiado lejos o la tensión es mucha. Acércate más o agarra la toalla con menos extensión de brazos.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Mantén los brazos más pegados al cuerpo y reduce la tensión de la toalla.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Aleja más el punto de agarre o añade una pausa de 5 s en la extensión.</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">3</div><span class="ex-name">Pallof Press simulado con toalla</span><span class="ex-tool">Toalla + pomo de puerta</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt23"></div><div class="ex-content"><p class="ex-desc">Sujeta la toalla con ambas manos a la altura del pecho, de pie de lado a la puerta. Extiende los brazos al frente sin dejar que el torso rote. Mantén 3 s y regresa. Anti-rotación lumbar fundamental.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">2 × 8 cada lado</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">60 s entre lados</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Si el torso gira hacia la puerta, estás demasiado lejos. Acércate o reduce la tensión de la toalla.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Mantén los brazos más pegados al cuerpo y reduce la tensión.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Aleja más el punto de agarre o añade pausa de 5 s.</div></div></div></div></div>
     </div>
-
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">4</div><span class="ex-name">Bisagra de cadera con apoyo en pared (Hip Hinge)</span><span class="ex-tool">Pared</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">De pie a 15 cm de la pared, con los pies a la anchura de caderas. Empuja el trasero hacia la pared (como si quisieras tocarla) mientras inclinas el torso hacia adelante con la espalda completamente recta. Cuando el trasero toca la pared, aprieta glúteos y vuelve a la posición erguida. Aprende el patrón de bisagra de cadera seguro.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">3 × 10</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">60 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Si la espalda redondea al inclinarte, coloca las manos en las caderas y solo baja 30-40°. La columna SIEMPRE debe mantenerse neutra. Este ejercicio prepara el cuerpo para agacharse de forma segura en la vida diaria.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Acércate más a la pared para reducir el rango de inclinación del torso.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Aleja la pared a 30 cm para más rango, o agrega botellas de agua en las manos.</div></div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">4</div><span class="ex-name">Bisagra de cadera con apoyo en pared</span><span class="ex-tool">Pared</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt24"></div><div class="ex-content"><p class="ex-desc">De pie a 15 cm de la pared, empuja el trasero hacia ella mientras inclinas el torso con la espalda recta. Al tocar la pared, aprieta glúteos y vuelve erguido. Aprende a agacharte de forma segura.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Series × Reps</div><div class="meta-val">3 × 10</div></div><div class="meta-box"><div class="meta-label">Descanso</div><div class="meta-val">60 s entre series</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Si la espalda redondea, coloca las manos en las caderas y solo baja 30-40°. Columna SIEMPRE neutra.</div></div><div class="reg-box"><div class="reg-item reg"><div class="reg-label">Regresión</div><div class="reg-text">Acércate más a la pared para reducir el rango de inclinación.</div></div><div class="reg-item prog"><div class="reg-label">Progresión</div><div class="reg-text">Aleja la pared a 30 cm o agrega botellas de agua en las manos.</div></div></div></div></div>
     </div>
-
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">5</div><span class="ex-name">Marcha funcional con coordinación de brazos</span><span class="ex-tool">Sin material</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Camina en el sitio a ritmo moderado durante 3 minutos, enfatizando el balanceo natural de brazos contrarios a las piernas. Luego, durante 1 minuto, exagera el balanceo de brazos. Integra la coordinación cuerpo completo y refuerza el patrón de marcha segura.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">4 minutos continuos</div></div><div class="meta-box"><div class="meta-label">Ritmo</div><div class="meta-val">Moderado, cómodo</div></div></div><div class="alert-box"><div class="alert-title">Atención general</div><div class="alert-text">Si hay mareo, para inmediatamente y siéntate. Este ejercicio puede hacerse cerca de una silla o pared por seguridad.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">5</div><span class="ex-name">Marcha funcional con coordinación de brazos</span><span class="ex-tool">Sin material</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt25"></div><div class="ex-content"><p class="ex-desc">Camina en el sitio a ritmo moderado durante 3 minutos, enfatizando el balanceo natural de brazos contrarios a las piernas. Último minuto: exagera el balanceo de brazos.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">4 minutos continuos</div></div><div class="meta-box"><div class="meta-label">Ritmo</div><div class="meta-val">Moderado y cómodo</div></div></div><div class="alert-box"><div class="alert-title">Atención general</div><div class="alert-text">Si hay mareo, para y siéntate inmediatamente. Hazlo siempre cerca de una silla o pared.</div></div></div></div>
     </div>
-
   </div>
 </div>
 
 <div class="phase-card">
   <div class="phase-header"><div class="phase-dot ph3"></div><span class="phase-label">Fase 3 · Vuelta a la calma</span><span class="phase-time">10 min</span></div>
   <div class="ex-list">
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">1</div><span class="ex-name">Abrazo de rodillas al pecho</span><span class="ex-tool">Esterilla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Tumbado boca arriba, abraza ambas rodillas al pecho suavemente. Balancea ligeramente de lado a lado. Libera la tensión acumulada en la zona lumbar de forma pasiva. Aguanta 45-60 s.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">45-60 s</div></div><div class="meta-box"><div class="meta-label">Respiración</div><div class="meta-val">Lenta y abdominal</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">El agarre es suave, sin tensión en los brazos. Si hay molestia en las rodillas al doblarlas, sujeta por detrás de los muslos en lugar de por las espinillas.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">1</div><span class="ex-name">Abrazo de rodillas al pecho</span><span class="ex-tool">Esterilla</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt26"></div><div class="ex-content"><p class="ex-desc">Tumbado boca arriba, abraza ambas rodillas al pecho suavemente. Balancea de lado a lado. Libera la tensión lumbar de forma pasiva. Aguanta 45-60 s.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">45-60 s</div></div><div class="meta-box"><div class="meta-label">Respiración</div><div class="meta-val">Lenta y abdominal</div></div></div><div class="alert-box"><div class="alert-title">Atención a la espalda</div><div class="alert-text">Agarre suave. Si hay molestia en las rodillas, sujeta por detrás de los muslos.</div></div></div></div>
     </div>
-    <div class="ex-item" onclick="toggle(this)">
-      <div class="ex-header"><div class="ex-num">2</div><span class="ex-name">Respiración diafragmática final</span><span class="ex-tool">Esterilla</span><div class="ex-arrow">▾</div></div>
-      <div class="ex-body"><p class="ex-desc">Igual que los días anteriores. 5-8 respiraciones. Al final, visualiza el cuerpo pesado, cálido y relajado. Este cierre ritual entrena el sistema nervioso para recuperarse más eficientemente entre sesiones.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">3-5 minutos</div></div><div class="meta-box"><div class="meta-label">Contexto</div><div class="meta-val">En silencio o con música suave</div></div></div><div class="alert-box"><div class="alert-title">Atención general</div><div class="alert-text">Si al tumbarte notas dolor lumbar, eleva levemente la cabeza con una toalla doblada. Si persiste, consulta a un médico antes de continuar el programa.</div></div></div>
+    <div class="ex-item">
+      <div class="ex-header" onclick="toggle(this.parentElement)"><div class="ex-num">2</div><span class="ex-name">Respiración diafragmática final</span><span class="ex-tool">Esterilla</span><div class="ex-arrow">▾</div></div>
+      <div class="ex-body"><div id="yt27"></div><div class="ex-content"><p class="ex-desc">5-8 respiraciones. Al final, visualiza el cuerpo pesado, cálido y relajado. El cierre entrena el sistema nervioso para recuperarse entre sesiones.</p><div class="ex-meta"><div class="meta-box"><div class="meta-label">Tiempo</div><div class="meta-val">3-5 minutos</div></div><div class="meta-box"><div class="meta-label">Contexto</div><div class="meta-val">Silencio o música suave</div></div></div><div class="alert-box"><div class="alert-title">Atención general</div><div class="alert-text">Si notas dolor lumbar al tumbarte, eleva la cabeza con una toalla doblada. Si persiste, consulta al médico.</div></div></div></div>
     </div>
   </div>
 </div>
-
 </div>
 
-<!-- PROGRESIÓN SEMANAL -->
+<!-- PROGRESIÓN -->
 <div id="day3" class="day-hidden">
-
 <div class="section-title">Progresión Semanal Segura</div>
-
-<div class="prog-card">
-  <div class="prog-badge">Semanas 1-2</div>
-  <div class="prog-week">Fase de Adaptación Neural</div>
-  <div class="prog-text">Sigue el programa exactamente como está escrito. No añadas cargas. El objetivo no es el esfuerzo muscular sino aprender la biomecánica de cada movimiento. Es normal que las primeras sesiones se sientan "fáciles" — eso es correcto. El sistema nervioso está aprendiendo los patrones de movimiento.</div>
+<div class="prog-card"><div class="prog-badge">Semanas 1-2</div><div class="prog-week">Fase de Adaptación Neural</div><div class="prog-text">Sigue el programa exactamente como está escrito. No añadas cargas. El objetivo no es el esfuerzo muscular sino aprender la biomecánica de cada movimiento. Las primeras sesiones se sentirán "fáciles" — eso es correcto.</div></div>
+<div class="prog-card"><div class="prog-badge">Semanas 3-4</div><div class="prog-week">Consolidación y Primera Progresión</div><div class="prog-text">Si completas todas las series con buena técnica, aplica una sola progresión por ejercicio. Regla del 10%: nunca aumentes el volumen o la carga más de un 10% por semana.</div></div>
+<div class="prog-card"><div class="prog-badge">Semanas 5-6</div><div class="prog-week">Carga Progresiva y Estabilidad Avanzada</div><div class="prog-text">Añade una 4.ª serie en los ejercicios principales. Aumenta el tiempo de los ejercicios isométricos (plancha hasta 45 s, equilibrio hasta 40 s). Introduce la progresión del Dead Bug si la versión básica se hace sin esfuerzo.</div></div>
+<div class="prog-card"><div class="prog-badge">Semanas 7-8</div><div class="prog-week">Semana de Descarga y Revisión</div><div class="prog-text">Reduce el volumen total al 60-70% (menos series, misma técnica). Evalúa qué ejercicios se sienten sólidos antes de progresar. Nunca progresa dos variables a la vez.</div></div>
+<div class="prog-card"><div class="prog-badge">Señales de Alarma</div><div class="prog-week">Cuándo pausar y consultar</div><div class="prog-text">Para inmediatamente si experimentas: dolor articular agudo; inflamación o calor en una articulación; mareo o falta de aliento inusual; dolor en el pecho; dolor que persiste más de 48 h. El ardor muscular suave (DOMS) al día siguiente es normal.</div></div>
+<div class="prog-card"><div class="prog-badge">Distribución Semanal</div><div class="prog-week">Cómo organizar los 3 días</div><div class="prog-text">Ideal: Lunes — Miércoles — Viernes. Siempre al menos un día de descanso entre sesiones. En días libres, caminar 20-30 min a ritmo cómodo. Nunca 2 sesiones seguidas las primeras 6 semanas.</div></div>
 </div>
 
-<div class="prog-card">
-  <div class="prog-badge">Semanas 3-4</div>
-  <div class="prog-week">Consolidación y Primera Progresión</div>
-  <div class="prog-text">Si completas todas las series sin fatiga excesiva y con buena técnica, aplica una sola progresión por ejercicio (no todas a la vez). Ejemplo: si el Chair Squat se siente cómodo, añade 1-2 kg en la mochila. Si el puente de glúteo es fácil, añade 2 reps por serie. La regla del 10%: nunca aumentes el volumen o la carga más de un 10% por semana.</div>
-</div>
-
-<div class="prog-card">
-  <div class="prog-badge">Semanas 5-6</div>
-  <div class="prog-week">Carga Progresiva y Estabilidad Avanzada</div>
-  <div class="prog-text">Puedes añadir una 4.ª serie en los ejercicios principales si el tiempo lo permite. Aumenta el tiempo de los ejercicios isométricos (plancha inclinada hasta 40-45 s, equilibrio monopodal hasta 40 s). Introduce la progresión del Dead Bug si la versión básica se hace sin esfuerzo. Sigue sin saltos ni flexiones profundas de rodilla.</div>
-</div>
-
-<div class="prog-card">
-  <div class="prog-badge">Semanas 7-8</div>
-  <div class="prog-week">Revisión y Ajuste</div>
-  <div class="prog-text">Semana de descarga: reduce el volumen total al 60-70% (menos series, misma técnica). Permite que los tejidos se recuperen y adapten. Después de la descarga, evalúa qué ejercicios se sienten sólidos y cuáles aún necesitan consolidación antes de progresar. Nunca progresa dos variables a la vez (carga + velocidad + rango de movimiento).</div>
-</div>
-
-<div class="prog-card">
-  <div class="prog-badge">Señales de Alarma</div>
-  <div class="prog-week">Cuándo pausar y consultar</div>
-  <div class="prog-text">Para inmediatamente y consulta a un médico o fisioterapeuta si experimentas: dolor articular agudo durante el ejercicio (no confundir con ardor muscular que es normal); inflamación o calor en una articulación después de entrenar; mareo, náuseas o falta de aliento inusual; dolor en el pecho; dolor que persiste más de 48 h después de la sesión. El ardor muscular suave al día siguiente (DOMS) es normal y se reduce con las semanas.</div>
-</div>
-
-<div class="prog-card">
-  <div class="prog-badge">Distribución Semanal Óptima</div>
-  <div class="prog-week">Cómo organizar los 3 días</div>
-  <div class="prog-text">Ideal: Día 1 (Lunes) — Día 2 (Miércoles) — Día 3 (Viernes). Siempre deja al menos un día de descanso entre sesiones. En los días de descanso, caminar 20-30 min a ritmo cómodo acelera la recuperación (no es entrenamiento, es movimiento activo). Nunca hagas 2 sesiones seguidas las primeras 6 semanas.</div>
-</div>
-
-</div>
-
-<div class="footer"><p>NutriLogos · Programa adaptado a 60+ años · Consulta a tu médico antes de iniciar cualquier programa de ejercicio · Los síntomas articulares persistentes requieren valoración profesional</p></div>
+<div class="footer"><p>NutriLogos · Programa 60+ años · Consulta a tu médico antes de iniciar cualquier programa de ejercicio · Los síntomas articulares persistentes requieren valoración profesional</p></div>
 </div>
 
 <script>
-function showDay(n){
-  for(var i=0;i<4;i++){
-    var el=document.getElementById('day'+i);
-    if(el) el.className=i===n?'':'day-hidden';
-  }
-  var tabs=document.querySelectorAll('.tab');
-  tabs.forEach(function(t,i){t.className=i===n?'tab active':'tab'});
-}
-function toggle(item){
-  var body=item.querySelector('.ex-body');
-  var arrow=item.querySelector('.ex-arrow');
-  if(body.classList.contains('open')){body.classList.remove('open');arrow.style.transform=''}
-  else{body.classList.add('open');arrow.style.transform='rotate(180deg)'}
-}
+// Inject YT buttons after DOM is ready
+var videos = {
+  yt1:  {url:'https://www.youtube.com/shorts/u3pmQ7uv8bA', title:'Círculos de movilización para los pies · FisioOnline', tag:'Español · Short', short:true},
+  yt2:  {url:'https://www.youtube.com/shorts/d5jfJCUt--M', title:'Figura 4 en yoga — 10 variaciones para soltar caderas', tag:'Español · Short', short:true},
+  yt3:  {url:'https://www.youtube.com/watch?v=X8oQS1E8LA8', title:'Rutina de movilidad de columna para adultos mayores', tag:'Español · Vídeo', short:false},
+  yt4:  {url:'https://www.youtube.com/watch?v=QPjBD7gCYHU', title:'Progresión de sentadillas para adultos mayores con silla', tag:'Español · 2025', short:false},
+  yt5:  {url:'https://www.youtube.com/shorts/M-mnbbpJmXI', title:'Puente de glúteos — técnica correcta', tag:'Español · Short', short:true},
+  yt6:  {url:'https://www.youtube.com/shorts/rBX5MR9vISc', title:'Fortalece tu glúteo medio — abducción de cadera', tag:'Español · Short', short:true},
+  yt7:  {url:'https://www.youtube.com/shorts/xB8ybMNchwY', title:'Ejercicio de movilidad de tobillo — elevación de talones', tag:'Español · Short', short:true},
+  yt8:  {url:'https://www.youtube.com/watch?v=FPe2R4QwgzE', title:'Fortalecimiento sentado para personas mayores · Fisiosenior', tag:'Español · 2024', short:false},
+  yt9:  {url:'https://www.youtube.com/watch?v=oDXM-a-gBt8', title:'El Puente — fisioterapia en casa, isquiotibiales y cadera', tag:'Español · Fisio', short:false},
+  yt10: {url:'https://www.youtube.com/shorts/bPI1_3p6ay8', title:'Técnica de respiración diafragmática · Fisioterapia respiratoria', tag:'Español · Short · 2024', short:true},
+  yt11: {url:'https://www.youtube.com/watch?v=5GCkAWIe6uU', title:'Rutina brazos y espalda en silla — adultos mayores', tag:'Español · Fisio', short:false},
+  yt12: {url:'https://www.youtube.com/watch?v=ZVJUHSCI3ms', title:'Ejercicios de espalda en casa sin equipamiento — con toalla', tag:'Español · Toalla', short:false},
+  yt13: {url:'https://www.youtube.com/watch?v=TsPcau9O2Mg', title:'Tutorial flexiones en la pared sin dolor', tag:'Español · 2024', short:false},
+  yt14: {url:'https://www.youtube.com/watch?v=N1w5FWKNlPk', title:'Cómo hacer remo con toalla — ejercicio para espalda', tag:'Español · Espalda', short:false},
+  yt15: {url:'https://www.youtube.com/watch?v=FPe2R4QwgzE', title:'Fortalecimiento sentado — press de brazos para mayores', tag:'Español · 2024', short:false},
+  yt16: {url:'https://www.youtube.com/watch?v=KIAQ8xVUDBM', title:'Remo con toalla en casa — espalda y postura', tag:'Español · Postura', short:false},
+  yt17: {url:'https://www.youtube.com/watch?v=eHCQQSMZe-A', title:'Flexiones en pared — indicaciones de fisioterapeuta', tag:'Español · 2023', short:false},
+  yt18: {url:'https://www.youtube.com/shorts/bPI1_3p6ay8', title:'Técnica de respiración diafragmática · Short', tag:'Español · Short · 2024', short:true},
+  yt19: {url:'https://www.youtube.com/watch?v=Aqxq0BYgyoU', title:'Pilates en silla para adultos mayores — marcha y coordinación', tag:'Español · 2024', short:false},
+  yt20: {url:'https://www.youtube.com/watch?v=3dGnK7u8Xsk', title:'Gato-Vaca — movilidad y control de columna vertebral', tag:'Español · 2025', short:false},
+  yt21: {url:'https://www.youtube.com/watch?v=Rw3ThjUnu5A', title:'Ejercicios para fortalecer el core y eliminar dolor lumbar', tag:'Español · 2025', short:false},
+  yt22: {url:'https://www.youtube.com/shorts/g-gjQ2lWAzc', title:'Dead Bug para control motor en dolor lumbar · Short', tag:'Español · Short · 2026', short:true},
+  yt23: {url:'https://www.youtube.com/watch?v=HC0_4VYEKYs', title:'Ejercicios de core — Dead Bug y anti-rotación con variantes', tag:'Español · Core', short:false},
+  yt24: {url:'https://www.youtube.com/shorts/BS3ik4WLv9s', title:'Bisagra de cadera · Hip Hinge — Tierra Sport Club', tag:'Español · Short · 2025', short:true},
+  yt25: {url:'https://www.youtube.com/watch?v=hinhzVdqct0', title:'Rutina de ejercicios en silla — adultos mayores, marcha', tag:'Español · 2024', short:false},
+  yt26: {url:'https://www.youtube.com/watch?v=VveNLI1KIcQ', title:'El Puente — fisioterapia en casa, descompresión lumbar', tag:'Español · Fisio', short:false},
+  yt27: {url:'https://www.youtube.com/shorts/bPI1_3p6ay8', title:'Respiración diafragmática · Fisioterapia respiratoria', tag:'Español · Short · 2024', short:true}
+};
+
+Object.keys(videos).forEach(function(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  var v = videos[id];
+  var t = v.short ? 'Short · Vídeo corto' : 'Vídeo explicativo';
+  el.innerHTML =
+    '<a class="yt-btn" onclick="openLink(\''+v.url+'\'); return false;" href="#">'+
+      '<div class="yt-logo"><svg width="22" height="16" viewBox="0 0 22 16"><rect width="22" height="16" rx="3" fill="#FF0000"/><polygon points="9,4 17,8 9,12" fill="white"/></svg></div>'+
+      '<div class="yt-text">'+
+        '<span class="yt-tag">'+v.tag+'</span>'+
+        '<span class="yt-title">'+v.title+'</span>'+
+        '<span class="yt-type">'+t+'</span>'+
+      '</div>'+
+      '<span class="yt-arrow">›</span>'+
+    '</a>';
+});
 </script>
 </body></html>
